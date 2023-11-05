@@ -1,6 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import when
-
+from pyspark.sql.functions import col, split
 
 
 if __name__ == "__main__":
@@ -8,15 +7,17 @@ if __name__ == "__main__":
     spark = SparkSession.builder.appName("week10PySpark").getOrCreate()
 
     # Load the dataset
-    data = spark.read.csv("./nba.csv", header=True, inferSchema=True)
+    input_data = spark.read.csv("./nba.csv", header=True, inferSchema=True)
 
     # Data transformation example: Replace missing salary values with 0
-    input_data = input_data.na.fill({'Salary': 0})
+    input_data = input_data.na.fill({"Salary": 0})
 
     # calculate the average age of players by team
     input_data.createOrReplaceTempView("nba_players")
 
-    result = spark.sql("SELECT Team, AVG(Age) as avg_age FROM nba_players GROUP BY Team")
+    result = spark.sql(
+        "SELECT Team, AVG(Age) as avg_age FROM nba_players GROUP BY Team"
+    )
     result.show()
 
     # Perform the data transformation
