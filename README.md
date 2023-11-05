@@ -1,3 +1,8 @@
+[![test](https://github.com/nogibjj/week10miniproject/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/week10miniproject/actions/workflows/test.yml)
+[![lint](https://github.com/nogibjj/week10miniproject/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/week10miniproject/actions/workflows/lint.yml)
+[![format](https://github.com/nogibjj/week10miniproject/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/week10miniproject/actions/workflows/format.yml)
+[![install](https://github.com/nogibjj/week10miniproject/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/week10miniproject/actions/workflows/install.yml)
+
 # PySpark Data Processing
 
 ## Description
