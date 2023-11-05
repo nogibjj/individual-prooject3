@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, split
 
 
-if __name__ == "__main__":
+def main():
     # Initialize a Spark session
     spark = SparkSession.builder.appName("week10PySpark").getOrCreate()
 
