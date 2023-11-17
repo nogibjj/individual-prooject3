@@ -6,7 +6,7 @@
 # Individual Project #3: Databricks ETL (Extract Transform Load) Pipeline
 
 ## Description
-The dataset used in this example is a subset of the Million Song Dataset, a collection of features and metadata for contemporary music tracks. Then transform the raw songs data by filtering out unneeded columns and adding a new field containing a timestamp for the creation of the new record. Lastly query the transformed data: 1.Which artists released the most songs each year? 2.Find songs for your DJ list. The pipe line is scheduled every minute.
+The dataset used in this example is a subset of the Million Song Dataset, a collection of features and metadata for contemporary music tracks.
 
 [Video Walkthrough]()
 
@@ -15,7 +15,7 @@ Firstly, ingest the raw data by explicitly defineing the schema.
 Secondly, transform data using Spark SQL to get the the artist_id with the count of songs they have in the original dataset in descending order. 
 Thridly, Store the transformed Data in Delta Lake. 
 Forthly, check if the transfored data is not empty. if empty, raise an error.
-![](2.png)
+![](2.png) 
 Fifth, visualize the transformed data for the first 100 record.
 ![](3.png)
 Lastly, schedule the pipe line every 3 minutes for demo purpose.
