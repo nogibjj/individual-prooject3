@@ -8,7 +8,7 @@
 ## Description
 The dataset used in this example is a subset of the Million Song Dataset, a collection of features and metadata for contemporary music tracks.
 
-[Video Walkthrough]()
+[Video Walkthrough](https://youtu.be/tm43OoNuykE)
 
 Firstly, ingest the raw data by explicitly defineing the schema. 
 ![](1.png)
