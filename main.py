@@ -2,6 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, split
 
 
+
 def main():
     # Initialize a Spark session
     spark = SparkSession.builder.appName("week10PySpark").getOrCreate()
